@@ -2,44 +2,80 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="">
-        <meta name="author" content="Mokharev Ivan">
-
-        <title>АлёнаPROФИТНЕС | Твой фитнес-тренер Алёна Проскурина</title>
+        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+        
+        <meta name="author" content="Muhammad Morshed">
 		
-		<!-- ====================		Mobile Specific Meta	==================== -->
+        <title>АлёнаPROФИТНЕС | Твой фитнес тренер</title>
+		
+		<!-- Mobile Specific Meta
+		================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 		
-		<!-- ====================		CSS		==================== -->
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.css">
+		<!-- Owl Carousel -->
         <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- Grid Component css -->
         <link rel="stylesheet" href="css/component.css">
+		<!-- Slit Slider css -->
         <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
+		<!-- Media Queries -->
         <link rel="stylesheet" href="css/media-queries.css">
 
-		<!-- ====================		Google Font		==================== -->
-		<!-- Oswald / Title Font --><link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-		<!-- Ubuntu / Body Font --><link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+		<!--
+		Google Font
+		=========================== -->                    
 		
-		<!-- ====================		Modernizr подключение старых браузеров		==================== -->		
+		<!-- Oswald / Title Font -->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+		<!-- Ubuntu / Body Font -->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Modernizer Script for old Browsers -->		
         <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
-		<!-- ====================		JS метрики		==================== -->
-		<script><!-- Тут должен быть скрипт аналитики--></script>
+		  ga('create', 'UA-54152927-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+	
     </head>
 	
     <body id="body">
-	    <!-- ====================	 Preloader		==================== -->
+	    <!--
+	    Start Preloader
+	    ==================================== -->
 		<div id="loading-mask">
 			<div class="loading-img">
-				<img alt="AlenaPRO Preloader" src="img/preloader.gif"  />
+				<img alt="Meghna Preloader" src="img/preloader.gif"  />
 			</div>
 		</div>
-
-		<!-- ====================	 Welcome Slider		==================== -->
+        <!--
+        End Preloader
+        ==================================== -->
+		
+        <!--
+        Welcome Slider
+        ==================================== -->
 		<section id="home">	    
 		
             <div id="slitSlider" class="sl-slider-wrapper">
@@ -51,8 +87,8 @@
 							<div class="bg-img bg-img-1"></div>
 						<div class="carousel-caption">
 							<div>
-								<img class="wow fadeInUp" src="img/titleLogo.png" alt="AlenaPRO">
-								<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">фитнес-тренер Алёна Проскурина</h2>
+								<img class="wow fadeInUp" src="img/meghna.png" alt="Meghna">
+								<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Welcome To Meghna</h2>
 							</div>
 						</div>
 						</div>
@@ -65,9 +101,9 @@
 							<div class="bg-img bg-img-2"></div>
 						<div class="carousel-caption">
 							<div>
-								<h2 class="heading animated fadeInDown">Фитнес онлайн</h2>
-								<h3 class="animated fadeInUp">Возможность изменить свое тело никогда не была так достпуна</h3>
-								<a class="btn btn-green animated fadeInUp" href="#">Начать</a>
+								<h2 class="heading animated fadeInDown">Highly Responsive</h2>
+								<h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3>
+								<a class="btn btn-green animated fadeInUp" href="#">Get Started</a>
 							</div>
 						</div>
 						</div>
@@ -80,19 +116,20 @@
 							<div class="bg-img bg-img-3"></div>
 						<div class="carousel-caption">
 							<div>
-								<h2 class="heading animated fadeInRight">Расписание занятий</h2>
-								<h3 class="animated fadeInLeft">Время твоих любимых тренировок в зале</h3>
-								<a class="btn btn-green animated fadeInUp" href="#">Узнать и записаться</a>
+								<h2 class="heading animated fadeInRight">One Page Parallax HTML Template</h2>
+								<h3 class="animated fadeInLeft">Clean and Professional Design</h3>
+								<a class="btn btn-green animated fadeInUp" href="#">Learn More</a>
 							</div>
 						</div>
 						</div>
 					</div>
 					<!-- /single slide item -->
 
-				</div>
+				</div><!-- /sl-slider -->
+				
 				<nav id="nav-arrows" class="nav-arrows">
-					<span class="nav-arrow-prev">Назад</span>
-					<span class="nav-arrow-next">Вперед</span>
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
 				</nav>
 
 				<nav id="nav-dots" class="nav-dots">
@@ -100,25 +137,30 @@
 					<span></span>
 					<span></span>
 				</nav>
-			</div>
-		</section>
 
-		<!-- ====================	Fixed Navigation	==================== -->
+			</div><!-- /slider-wrapper -->
+		</section>
+		<!--/#home section-->
+		
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
         <header id="navigation" class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">=</span>
+                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+					<!-- /responsive nav button -->
 					
 					<!-- logo -->
-                    <a class="navbar-brand" href="#home">
+                    <a class="navbar-brand" href="#body">
 						<h1 id="logo">
-							<img src="img/logo-alenaprofitnes.png" alt="Alenaprofitnes" />
+							<img src="img/logo-meghna.png" alt="Meghna" />
 						</h1>
 					</a>
 					<!-- /logo -->
@@ -127,8 +169,8 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="Navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#home">Главная</a></li>
-                        <li><a href="#who_me">Кто я?</a></li>
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#showcase">Portfolio</a></li>
                         <li><a href="#our-team">Team</a></li>
@@ -141,124 +183,20 @@
 				
             </div>
         </header>
-        
-		<!-- ====================	Start Main Features	==================== -->
-		<section id="who_me">
-			<div class="container">
-				<div class="row">
-
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2>Привет, я <span class="color">Проскурина Алёна</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-
-					<div id="features">
-						<div class="item">
-							<div class="features-item">
-								<div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-									<iframe width="100%" height="450" src="https://video-previews.elements.envatousercontent.com/h264-video-previews/9b19c081-53dc-4345-a05e-0c9a4a52f3e6/26111213.mp4" allowfullscreen></iframe>
-								</div>
-								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-									<h3>МОЯ МИССИЯ: </h3>
-										<p>Помогать людям находить свой индивидуальный путь к более осознанной, здоровой и счастливой жизни!</p>
-									<h3>О МОЁМ ПРОФЕССИОНАЛЬНОМ ПУТИ:</h3>
-										<p>На протяжении восьми лет я помогаю людям изменить свою жизнь к лучшему, прививая здоровые привычки в питании и физической активности!</p>
-                    					<p>Мой путь в фитнесе начался с ведения групповых занятий различных направлений: от Pole Dance и растяжки до интенсивных силовых тренировок и изнурительных интервальных занятий.</p>
-                    					<p>Через несколько лет поняла, что хочу углубиться в изучение возможностей человеческого тела. Поэтому прошла обучение на тренера тренажерного зала и персонального тренера, что позволило мне более эффективно работать над улучшением физической формы моих клиентов и повышения качества их жизни.</p>
-									<h3>МОИ ПРИНЦИПЫ В РАБОТЕ:</h3>
-										<p></p>
-										<p></p>
-										<p></p>
-									<a href="#" class="btn btn-transparent">Подробнее</a>
-									<a href="#" class="btn btn-transparent">Коучинг</a>
-									<a href="#" class="btn btn-transparent">Расписание</a>
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> 		
-			</div>  
-		</section>   <!-- End section -->
-
-		<!-- ====================	Start Counter Section	==================== -->
-		<section id="counter" class="parallax-section">
-			<div class="container">
-				<div class="row">
-
-					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2>Мои главные <span class="color">правила</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-				
-					<!-- first count item -->
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="1000" data-to="8">8</span>
-								<span>+</span>
-							</div>
-							<i class="fa fa-calendar fa-5x"></i>
-							<h3>Лет опыта</h3>
-						</div>
-					</div>
-					<!-- end first count item -->
-				
-					<!-- second count item -->
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="1000" data-to="20">20</span>
-								<span>+</span>
-							</div>
-							<i class="fa fa-bars fa-5x"></i>
-							<h3>Программ тренировок</h3>
-						</div>
-					</div>
-					<!-- end second count item -->
-				
-					<!-- third count item -->
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-						<div class="counters-item">
-							<div>
-							    <span data-speed="1000" data-to="95">95</span>
-								<span>%</span>
-							</div>
-							<i class="fa fa-thumbs-up fa-5x"></i>
-				            <h3>Положительных отзывов</h3>
-							
-						</div>
-					</div>
-					<!-- end third count item -->
-					
-					<!-- fourth count item -->
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="counters-item kill-margin-bottom">
-							<div>
-							    <span data-speed="1000" data-to="150">150</span>
-							</div>
-							<i class="fa fa-users fa-5x"></i>
-							<h3>Счастливых клиентов</h3>
-						</div>
-					</div>
-					<!-- end fourth count item -->
-					
-				</div> 		<!-- end row -->
-			</div>   	<!-- end container -->
-		</section>   <!-- end section -->
-
-		<!-- ====================	Start About Section	==================== -->
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<!--
+		Start About Section
+		==================================== -->
 		<section id="about" class="bg-one">
 			<div class="container">
 				<div class="row">
 				
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2>Почему именно <span class="color">Я</span></h2>
+						<h2>About <span class="color">Us</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
@@ -271,8 +209,8 @@
 							</div>					
 							<!-- Express About Yourself -->
 							<div class="about-content text-center">
-								<h3 class="ddd">Индивидуальный подход</h3>								
-								<p>Я знаю, что каждый человек уникален, и у меня есть возможность адаптировать тренировки под ваши конкретные потребности и цели.</p>
+								<h3 class="ddd">We're Creative</h3>								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
 							</div>
 						</div>
 					</div> 
@@ -307,75 +245,227 @@
 						</div>
 					</div> 
 					<!-- End About item -->
-
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="wrap-about kill-margin-bottom">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3>We're Professional</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="wrap-about kill-margin-bottom">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3>We're Professional</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="wrap-about kill-margin-bottom">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3>We're Professional</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="wrap-about kill-margin-bottom">
-							<div class="icon-box">
-								<i class="fa fa-users fa-4x"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="about-content text-center">
-								<h3>We're Professional</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-
 					
 				</div> 		<!-- End row -->
 			</div>   	<!-- End container -->
 		</section>   <!-- End section -->
 		
+		<!--
+		Start Main Features
+		==================================== -->
+		<section id="main-features">
+			<div class="container">
+				<div class="row">
+					
+					<!-- features item -->
+					<div id="features">
+						<div class="item">
+							
+							<div class="features-item">
+								
+								<!-- features media -->
+								<div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
+									<iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
+								</div>
+								<!-- /features media -->
+								
+								<!-- features content -->
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									<h3>Main Features of Meghna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+									<a href="#" class="btn btn-transparent">Learn More</a>
+									<a href="#" class="btn btn-transparent">Purchase Theme</a>
+								</div>
+								<!-- /features content -->
+								
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="features-item">
+							
+								<!-- features media -->
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<img src="img/blog/3D-beach-art.jpg" alt="3D Beach Art | Meghna" class="img-responsive">
+								</div>
+								<!-- /features media -->
+								
+								<!-- features content -->
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									<h3>Main Features of Meghna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+									<a href="#" class="btn btn-transparent">Learn More</a>
+									<a href="#" class="btn btn-transparent">Purchase Theme</a>
+								</div>
+								<!-- /features content -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- /features item -->
+					
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+		
+		<!--
+		Start Counter Section
+		==================================== -->
+		
+		<section id="counter" class="parallax-section">
+			<div class="container">
+				<div class="row">
+				
+					<!-- first count item -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+						<div class="counters-item">
+							<div>
+							    <span data-speed="3000" data-to="320">320</span>
+							</div>
+							<i class="fa fa-users fa-3x"></i>
+							<h3>Happy Clients</h3>
+						</div>
+					</div>
+					<!-- end first count item -->
+				
+					<!-- second count item -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="counters-item">
+							<div>
+							    <span data-speed="3000" data-to="565">565</span>
+							</div>
+							<i class="fa fa-check-square fa-3x"></i>
+							<h3>Projects completed</h3>
+						</div>
+					</div>
+					<!-- end second count item -->
+				
+					<!-- third count item -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="counters-item">
+							<div>
+							    <span data-speed="3000" data-to="95">95</span>
+								<span>%</span>
+							</div>
+							<i class="fa fa-thumbs-up fa-3x"></i>
+				            <h3>Positive feedback</h3>
+							
+						</div>
+					</div>
+					<!-- end third count item -->
+					
+					<!-- fourth count item -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="counters-item kill-margin-bottom">
+							<div>
+							    <span data-speed="3000" data-to="2500">2500</span>
+							</div>
+							<i class="fa fa-coffee fa-3x"></i>
+							<h3>Cups of Coffee</h3>
+						</div>
+					</div>
+					<!-- end fourth count item -->
+					
+				</div> 		<!-- end row -->
+			</div>   	<!-- end container -->
+		</section>   <!-- end section -->
 		
 		
-		<!-- ====================	Start Scheduler Section	==================== -->
+		<!-- Start Services Section
+		==================================== -->
+		
+		<section id="services" class="bg-one">
+			<div class="container">
+				<div class="row">
+					
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Our <span class="color">Services</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+					
+                    <!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-wordpress fa-5x"></i>
+							</div>
+							<h3>WordPress Theme</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+                    <!-- End Single Service Item -->
+                    
+                    <!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-desktop fa-5x"></i>
+							</div>
+							<h3>Responsive Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+                    <!-- End Single Service Item -->
+                    
+                    <!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-play fa-5x"></i>
+							</div>
+							<h3>Media &amp; Advertisement</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
+					
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-eye fa-5x"></i>
+							</div>
+							<h3>Graphic Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
+					
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-android fa-5x"></i>
+							</div>
+							<h3>Apps Development</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
+					
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="service-block text-center kill-margin-bottom">
+							<div class="service-icon text-center">
+								<i class="fa fa-link fa-5x"></i>
+							</div>
+							<h3>Networking</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
+						
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+		
+		
+		<!-- Start Portfolio Section
+		=========================================== -->
 		
 		<section id="showcase">
 			<div class="container">
@@ -384,7 +474,7 @@
 					
 						<!-- section title -->
 						<div class="title text-center">
-							<h2>Расписание <span class="color">Занятий</span></h2>
+							<h2>Our <span class="color">Works</span></h2>
 							<div class="border"></div>
 						</div>
 						<!-- /section title -->
@@ -392,12 +482,11 @@
 						<!-- portfolio item filtering -->
 						<div class="portfolio-filter clearfix">
 							<ul class="text-center">
-							    <li><a href="javascript:void(0)" class="filter" data-filter="all">Все</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".app">GYM</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Interval Cardio</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Bodypump</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Softfit Power</a></li>
-								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Softfit Stretch</a></li>
+							    <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".app">Mobile App</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Web Design</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Photoshop</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
 							</ul>
 						</div>
 						<!-- /portfolio item filtering -->
@@ -1268,6 +1357,11 @@
 				</div> <!-- end row -->
 			</div> <!-- end container -->
 			
+			<!-- Google Map -->
+			<div class="google-map wow fadeInDown" data-wow-duration="500ms">
+				<div id="map-canvas"></div>
+			</div>	
+			<!-- /Google Map -->
 			
 		</section> <!-- end section -->
 		
@@ -1321,26 +1415,45 @@
 		<!-- 
 		Essential Scripts
 		=====================================-->
-		<script src="https://kit.fontawesome.com/6449a02342.js" crossorigin="anonymous"></script>
+		
+		<!-- Main jQuery -->
 		<script src="js/jquery-1.11.0.min.js"></script>
+		<!-- Bootstrap 3.1 -->
 		<script src="js/bootstrap.min.js"></script>
+		<!-- Slitslider -->
 		<script src="js/jquery.slitslider.js"></script>
 		<script src="js/jquery.ba-cond.min.js"></script>
+		<!-- Parallax -->
 		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- Owl Carousel -->
 		<script src="js/owl.carousel.min.js"></script>
+		<!-- Portfolio Filtering -->
 		<script src="js/jquery.mixitup.min.js"></script>
+		<!-- Custom Scrollbar -->
 		<script src="js/jquery.nicescroll.min.js"></script>
+		<!-- Jappear js -->
 		<script src="js/jquery.appear.js"></script>
+		<!-- Pie Chart -->
 		<script src="js/easyPieChart.js"></script>
+		<!-- jQuery Easing -->
 		<script src="js/jquery.easing-1.3.pack.js"></script>
+		<!-- tweetie.min -->
 		<script src="js/tweetie.min.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Google Map API -->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Highlight menu item -->
 		<script src="js/jquery.nav.js"></script>
+		<!-- Sticky Nav -->
 		<script src="js/jquery.sticky.js"></script>
+		<!-- Number Counter Script -->
 		<script src="js/jquery.countTo.js"></script>
+		<!-- wow.min Script -->
 		<script src="js/wow.min.js"></script>
+		<!-- For video responsive -->
 		<script src="js/jquery.fitvids.js"></script>
+		<!-- Grid js -->
 		<script src="js/grid.js"></script>
+		<!-- Custom js -->
 		<script src="js/custom.js"></script>
 
     </body>
