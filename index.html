@@ -168,9 +168,11 @@
                     					<p>Мой путь в фитнесе начался с ведения групповых занятий различных направлений: от Pole Dance и растяжки до интенсивных силовых тренировок и изнурительных интервальных занятий.</p>
                     					<p>Через несколько лет поняла, что хочу углубиться в изучение возможностей человеческого тела. Поэтому прошла обучение на тренера тренажерного зала и персонального тренера, что позволило мне более эффективно работать над улучшением физической формы моих клиентов и повышения качества их жизни.</p>
 									<h3>МОИ ПРИНЦИПЫ В РАБОТЕ:</h3>
-										<p></p>
-										<p></p>
-										<p></p>
+										<p>• Следование принципам доказательной медицины: опора исключительно на качественные, «верхнеуровневые» научные рекомендации (гайдлайны), а не на единичные исследования;</p>
+										<p>• Строгое соблюдение границ компетенций и этического кодекса;</p>
+										<p>	• Клиентоцентрированный индивидуальный подход (интересы, цели, опыт и качества клиента - во главе угла);</p>
+										<p>	• Партнерские отношения с клиентом, основанные на уважении и доверии;</p>
+										<p>	• Курс на заботу о себе, а не результат любой ценой.</p>
 									<a href="#" class="btn btn-transparent">Подробнее</a>
 									<a href="#" class="btn btn-transparent">Коучинг</a>
 									<a href="#" class="btn btn-transparent">Расписание</a>
@@ -984,7 +986,7 @@
 		
 		
 		<!-- Start Testimonial
-		=========================================== -->
+		===========================================  -->
 		
 		<section id="testimonial" class="parallax-section">
 			<div class="container">
@@ -1091,9 +1093,7 @@
 		</section>    <!-- End Section -->
 		
 		
-		<!--
-		Start Blog Section
-		=========================================== -->
+		<!-- ====================	Last Blog Post		==================== -->
 				
 		<section id="blog" class="bg-one">
 			<div class="container">
@@ -1101,7 +1101,7 @@
 
 					<!-- section title -->
 					<div class="title text-center wow fadeInDown">
-						<h2> Latest <span class="color">Posts</span></h2>
+						<h2> Последние <span class="color">Посты</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
@@ -1109,60 +1109,61 @@
 					<div class="clearfix">
 					
 						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
+						<script>
+							// Функция получения 15 последних постов из группы
+							function getLastPosts() {
+								var groupId = "202500914"; 
+								var count = 3;
+								var units = ['ч', 'м', 'с'];
 								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- /single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="note">
-								<div id="gallery-post" class="media-wrapper">
-									<div class="item">
-										<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/bicycle.jpg" alt="Flying bicycle" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="img/blog/3D-beach-art.jpg" alt="3D Beach Art | Meghna" class="img-responsive">
-									</div>
-								</div>
+								// Запрос к API ВКонтакте на получение последних постов группы
+								var xhr = new XMLHttpRequest;
+								xhr.open('GET', 'https://api.vk.com/method/wall.get?owner_id=-' + groupId + '&count=' + count + '&v=5.131&access_token=YmyoXobMnPpEMaS2ePdQ', true);
+								xhr.onload = function() {
+									var response = JSON.parse(xhr.response);
+									var items = response.response.items;
+									
+									// Формирование HTML-кода для отображения постов на сайте
+									var html = '';
+									for (var i = 0; i < items.length; i++) {
+										var post = items[i];
+										// Преобразование даты поста в формат "дд.мм.гггг чч:мм"
+										var date = new Date(post.date * 1000).toLocaleString().replace(/:\d{2}\s/, ' ');
+										// Описание поста без HTML-тегов и сокращение до 250 символов
+										var text = post.text.replace(/<[^>]*>/g, '').substr(0, 250) + '...';
+										
+										// Формирование HTML-кода для текущего поста
+										html += '<div class="post">';
+										html += '<div class="date">' + date + '</div>';
+										html += '<div class="text">' + text + '</div>';
+										html += '</div>';
+									}
+									
+									// Вставка сформированного HTML-кода на сайт
+									document.getElementById('posts').innerHTML = html;
+								};
+								xhr.send();
 								
-								<div class="excerpt">
-									<h3>Simple Slider Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-transparent" href="single-post.html">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
+								// Функция для сокращения числа с указанием единицы измерения
+								function formatNumber(number) {
+									if (number < 60) {
+										return number + ' ' + units[2];
+									} else if (number < 3600) {
+										var minutes = Math.floor(number / 60);
+										return minutes + ' ' + units[1];
+									} else {
+										var hours = Math.floor(number / 3600);
+										return hours + ' ' + units[0];
+									}
+								}
+							}
+							
+							// Вызов функции получения последних постов при загрузке страницы
+							window.onload = getLastPosts;
+							</script>
+							
+							<!-- HTML-код для отображения постов на сайте -->
+							<div id="posts"></div>
 						
 						<!-- single blog post -->
 						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
@@ -1170,6 +1171,7 @@
 								<div class="media-wrapper">
 									<img src="img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
 								</div>
+								<div id="posts"></div>
 								<div class="excerpt">
 									<h3>Simple Image Post</h3>
 									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
@@ -1184,143 +1186,101 @@
 						<a class="btn btn-transparent" href="blog.html">View All Post</a>
 					</div>
 
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end section -->
-		
-		<!-- Srart Contact Us
-		=========================================== -->		
+				</div>
+			</div> 
+		</section>
+			
+		<!-- ====================	Contact ME		==================== -->
 		<section id="contact-us">
 			<div class="container">
 				<div class="row">
-					
+			
 					<!-- section title -->
 					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-						<h2>Get In <span class="color">Touch</span></h2>
+						<h2>Свяжись со <span class="color">Мной</span></h2>
 						<div class="border"></div>
 					</div>
-					<!-- /section title -->
-					
-					<!-- Contact Details -->
+					<!-- /section title -->	
+
 					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-						<h3>Contact Details</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.</p>
+						<h3>Контакты</h3>
+						<p>Не упусти возможность связаться мной! Воспользуйтесь любый удобным способом связи, чтобы получить консультацию или обсудить сотрудничество.</p>
 						<div class="contact-details">
 							<div class="con-info clearfix">
 								<i class="fa fa-home fa-lg"></i>
-								<span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+								<span><a href="https://yandex.ru/maps/-/CHEnRZnV">мкр.Южный, г.Кемерово, обл.Кемеровская, Россия</a></span>
 							</div>
-							
 							<div class="con-info clearfix">
 								<i class="fa fa-phone fa-lg"></i>
-								<span>Phone: +880-31-000-000</span>
+								<span><a href="tel:+79049615234">+7 (904) 961 52 34</a></span>
 							</div>
-							
 							<div class="con-info clearfix">
-								<i class="fa fa-fax fa-lg"></i>
-								<span>Fax: +880-31-000-000</span>
-							</div>
-							
-							<div class="con-info clearfix">
-								<i class="fa fa-envelope fa-lg"></i>
-								<span>Email: hello@meghna.com</span>
+								<span></span><i class="fa fa-envelope fa-lg"></i></span>
+								<span><a href="mailto:hello@алёнапрофитнес.рф">email: hello@алёнапрофитнес.рф</a></span>
 							</div>
 						</div>
 					</div>
-					<!-- / End Contact Details -->
-						
-					<!-- Contact Form -->
 					<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 						<form id="contact-form" method="post" action="sendmail.php" role="form">
-						
 							<div class="form-group">
-								<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+								<input type="text" placeholder="Твоё имя" class="form-control" name="name" id="name">
 							</div>
-							
 							<div class="form-group">
-								<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+								<input type="email" placeholder="Твой Email" class="form-control" name="email" id="email">
 							</div>
-							
 							<div class="form-group">
-								<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+								<textarea rows="6" placeholder="Сообщение" class="form-control" name="message" id="message"></textarea>	
 							</div>
-							
-							<div class="form-group">
-								<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
-							</div>
-							
 							<div id="mail-success" class="success">
-								Thank you. The Mailman is on His Way :)
+								Спасибо. Почтальон уже в пути :)
 							</div>
-							
 							<div id="mail-fail" class="error">
-								Sorry, don't know what happened. Try later :(
+								Извините, что-то произошло. Попробуйте позже :(
 							</div>
-							
 							<div id="cf-submit">
-								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">
 							</div>						
-							
 						</form>
 					</div>
-					<!-- ./End Contact Form -->
-				
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-			
-			
-		</section> <!-- end section -->
-		
-		<!-- end Contact Area
-		========================================== -->
-		
+				</div> 
+			</div> 
+		</section> 
+
+		<!-- ====================	Social Links		==================== -->
 		<footer id="footer" class="bg-one">
 			<div class="container">
 			    <div class="row wow fadeInUp" data-wow-duration="500ms">
 					<div class="col-lg-12">
-						
-						<!-- Footer Social Links -->
 						<div class="social-icon">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="http://vk.com/alena_pro_fitness"><i class="fa fa-vk"></i></a></li>
+								<li><a href="http://t.me/Alena_pro_fitnesss"><i class="fa fa-telegram"></i></a></li>
+								<li><a href="http://wa.me/+79049615234"><i class="fa fa-whatsapp"></i></a></li>
 								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+								<li><a href="tel:+79049615234"><i class="fa fa-phone"></i></a></li>
 							</ul>
 						</div>
-						<!--/. End Footer Social Links -->
-
-						<!-- copyright -->
+						<!--	Copyright	-->
 						<div class="copyright text-center">
 							<a href="index.html">
-								<img src="img/logo-meghna.png" alt="Meghna" /> 
+								<img src="img/logo-alenaprofitnes.png" alt="AlenaPRO" /> 
 							</a>
 							<br />
-							
-							<p>Design And Developed by <a href="http://www.themefisher.com"> Themefisher Team</a>. Copyright &copy; 2015. All Rights Reserved.</p>
+							<p>Разработка и продвижение <a href="http://www.vk.com/mokharev"><b>Mokharev Ivan</b></a>. Copyright &copy; 2024. All Rights Reserved.</p>
 						</div>
-						<!-- /copyright -->
-						
-					</div> <!-- end col lg 12 -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</footer> <!-- end footer -->
+						<!--	/Copyright	-->
+					</div>
+				</div>
+			</div>
+		</footer>
 		
-		<!-- Back to Top
-		============================== -->
+		<!-- ====================	Back Top Script		==================== -->
 		<a href="javascript:;" id="scrollUp">
 			<i class="fa fa-angle-up fa-2x"></i>
 		</a>
 		
-		<!-- end Footer Area
-		========================================== -->
-		
-		<!-- 
-		Essential Scripts
-		=====================================-->
+		<!-- ====================	Essential Script		==================== -->
 		<script src="https://kit.fontawesome.com/6449a02342.js" crossorigin="anonymous"></script>
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
